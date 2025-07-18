@@ -33,7 +33,8 @@ use SiasnClient\SIASN_Core;
 require 'vendor/autoload.php';
 
 $siasn = new SIASN_Core();
-$response = $siasn->getDataUtama('1991xxxxxxxxxxx');
+$nip="1991xxxxxxxxxxxx";
+$response = $siasn->getDataUtama($nip);
 
 print_r($response);
 ```
