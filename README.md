@@ -49,13 +49,12 @@ Struktur Folder
 
 ```
 src/
-├── Config.php         // Konfigurasi credential (jangan diupload)
+├── Config.php         // Konfigurasi credential
 ├── HttpRequest.php    // Wrapper untuk request GET/POST/DELETE
 ├── SIASN_Core.php     // Endpoint SIASN
 ├── TokenManager.php   // Manajemen token OAuth
 ├── Url.php            // Builder URL endpoint
-downloads/             // Tempat simpan file PDF (opsional)
-vendor/                // Composer packages (ignored di Git)
+vendor/                // Composer packages 
 
 ```
 
