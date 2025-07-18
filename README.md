@@ -26,3 +26,35 @@ Ubah file konfigurasi di src/Config.php
         $this->base_url      = 'BASE URL BKN';
 ```
 
+Contoh: Mendapatkan Data Utama ASN
+```
+use SiasnClient\SIASN_Core;
+
+require 'vendor/autoload.php';
+
+$siasn = new SIASN_Core();
+$response = $siasn->getDataUtama('1991xxxxxxxxxxx');
+
+print_r($response);
+```
+
+Contoh: Download Dokumen
+```
+$filepath ="xxxxxxxxxxxxxxxxx";
+$siasn->downloadDokumenToBrowser($filepath);
+```
+
+Struktur Folder 
+
+```
+src/
+├── Config.php         // Konfigurasi credential (jangan diupload)
+├── HttpRequest.php    // Wrapper untuk request GET/POST/DELETE
+├── SIASN_Core.php     // Endpoint SIASN
+├── TokenManager.php   // Manajemen token OAuth
+├── Url.php            // Builder URL endpoint
+downloads/             // Tempat simpan file PDF (opsional)
+vendor/                // Composer packages (ignored di Git)
+
+```
+
