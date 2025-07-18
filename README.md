@@ -120,12 +120,12 @@ getRiwayatSkp22(string $nip)
 downloadDok(string $filePath)
 
 🔹 Pengadaan ASN
-listPengadaanInstansi(string $tahun, int $limit = 0, int $offset = 10000)
+listPengadaanInstansi(string $tahun, int $limit = 0, int $offset = 100)
 
 🔹 Kenaikan Pangkat
-kpInstansiById(string $id, int $limit = 0, int $offset = 10000)
+kpInstansiById(string $id, int $limit = 0, int $offset = 100)
 
-listKpInstansi(string $periode, int $limit = 0, int $offset = 10000)
+listKpInstansi(string $periode, int $limit = 0, int $offset = 100)
 
 uploadDokSkKp(array $form)
 
@@ -133,5 +133,5 @@ uploadDokSkKp(array $form)
 listPensiunInstansi(string $tglAwal, string $tglAkhir)
 
 🔹 Referensi UNOR
-refUnor(int $limit = 0, int $offset = 10000)
+refUnor(int $limit = 0, int $offset = 100)
 
