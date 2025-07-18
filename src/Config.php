@@ -17,7 +17,7 @@ class Config
         $this->consumer_key = 'CONSUMER KEY ANDA';
         $this->consumer_secret = 'CONSUMER SECRET ANDA';
         $this->token_sso = 'TOKEN SSON ANDA';
-        $this->token_url     = 'https://apimws.bkn.go.id/oauth2/token';
-        $this->base_url      = 'https://apimws.bkn.go.id:8243/apisiasn/1.0/';
+        $this->token_url     = 'URL TOKEN';
+        $this->base_url      = 'BASE URL API BKN';
     }
 }
