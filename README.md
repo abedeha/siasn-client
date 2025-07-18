@@ -59,3 +59,79 @@ vendor/                // Composer packages (ignored di Git)
 
 ```
 
+📚 Fitur Lengkap
+🔹 Data Utama
+getDataUtama(string $nip)
+
+getDataAnak(string $nip)
+
+getDataPasangan(string $nip)
+
+getDataUtamaGolonganSync(string $orangId)
+
+getDataUtamaJabatanSync(string $orangId)
+
+🔹 Riwayat
+getRiwayatIpAsn(string $nip)
+
+getRiwayatAngkaKredit(string $nip)
+
+getRiwayatCltn(string $nip)
+
+getRiwayatPotensi(string $nip)
+
+getRiwayatKompetensi(string $nip)
+
+getRiwayatDiklat(string $nip)
+
+getRiwayatDp3(string $nip)
+
+getRiwayatGolongan(string $nip)
+
+getRiwayatHukdis(string $nip)
+
+getRiwayatJabatan(string $nip)
+
+getRiwayatSertifikasi(string $nip)
+
+getRiwayatKinerjaPeriodik(string $nip)
+
+getRiwayatKursus(string $nip)
+
+getRiwayatMasaKerja(string $nip)
+
+getRiwayatPemberhentian(string $nip)
+
+getRiwayatPendidikan(string $nip)
+
+getRiwayatPenghargaan(string $nip)
+
+getRiwayatPindahInstansi(string $nip)
+
+getRiwayatPnsUnor(string $nip)
+
+getRiwayatPwk(string $nip)
+
+getRiwayatSkp(string $nip)
+
+getRiwayatSkp22(string $nip)
+
+🔹 Dokumen
+downloadDok(string $filePath)
+
+🔹 Pengadaan ASN
+listPengadaanInstansi(string $tahun, int $limit = 0, int $offset = 10000)
+
+🔹 Kenaikan Pangkat
+kpInstansiById(string $id, int $limit = 0, int $offset = 10000)
+
+listKpInstansi(string $periode, int $limit = 0, int $offset = 10000)
+
+uploadDokSkKp(array $form)
+
+🔹 Pensiun
+listPensiunInstansi(string $tglAwal, string $tglAkhir)
+
+🔹 Referensi UNOR
+refUnor(int $limit = 0, int $offset = 10000)
+
