@@ -1,0 +1,34 @@
+{
+  "name": "abedeha/siasn-client",
+  "description": "PHP client untuk integrasi dengan SIASN BKN",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Abedeha",
+      "email": "abdulharis@tanahdatar.go.id"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SiasnClient\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SiasnClient\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "test": "phpunit"
+  }
+}
